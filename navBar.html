@@ -1,0 +1,147 @@
+<style>
+    .tealbar {
+        background: #1ca98e;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 8px 0;
+        letter-spacing: 0.5px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 49px 48px 41px 48px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 48px;
+    }
+
+    nav {
+        display: flex;
+        gap: 36px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #222;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    nav a:hover {
+        color: #1ca98e;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .search-bar {
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        outline: none;
+        transition: border 0.2s;
+    }
+
+    .search-bar:focus {
+        border: 1.5px solid #1ca98e;
+    }
+
+    .icon-btn {
+        background: none;
+        border: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        color: #222;
+        cursor: pointer;
+        margin-left: 4px;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .icon-btn:hover,
+    .icon-btn:focus {
+        background: rgba(28, 169, 142, 0.1);
+        color: #1ca98e;
+        outline: none;
+    }
+
+    .icon-btn svg {
+        width: 22px;
+        height: 22px;
+        display: block;
+    }
+
+    @media (max-width: 900px) {
+        header {
+            flex-direction: column;
+            gap: 18px;
+            padding: 32px 18px 18px 18px;
+        }
+
+        .logo img {
+            height: 38px;
+        }
+
+        nav {
+            gap: 18px;
+        }
+
+        .header-actions {
+            gap: 8px;
+        }
+    }
+</style>
+<div class="tealbar">
+    SUMMER SALE IS BACK! GET UPTO 40% DISCOUNT ON HEADPHONES!
+</div>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/home/logo.png" alt="S.R.Tech Logo">
+        </a>
+    </div>
+    <nav>
+        <a href="./categories.html">CATEGORIES</a>
+        <a href="cart.html">CART</a>
+        <a href="about.html">ABOUT US</a>
+    </nav>
+    <div class="header-actions">
+        <input type="text" class="search-bar" placeholder="Search">
+        <a href="cart.html" class="icon-btn" title="Cart" aria-label="Go to cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+        </a>
+        <button class="icon-btn" title="Account" aria-label="Account">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </button>
+    </div>
+</header>
